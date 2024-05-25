@@ -1,6 +1,5 @@
 /* Aplica a todo el body */
 /* _____________________ */
-
 *
 {
     margin: 0;
@@ -11,27 +10,31 @@
 
 section
 {
+    background-image:url(fondo.jpg);
+    overflow: hidden; /*PORQUE SE VE EXPANDIDA*/
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column; /* Ordenar elementos verticalmente, uno abajo de otro. */
     align-items: center; /* Centrar elementos con respecto al eje vertical. */
     justify-content: space-around;
-    background-color: #d4cdcd; 
-    color: white;
+    color: rgb(0, 0, 0);
     height: 100vh;
 }
 
 #foto-de-perfil
 {
     width: 150px;
-    height: auto;
-    border-radius: 70%;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
     display: block; /* En vez de mostrarse en línea con el texto, se muestra como un bloque. */
     object-fit: cover; /* Escalar el contenido manteniendo la relación de aspecto. */
 }
 
 .boton
 {
-    background-color: #fff;
+    background-color: #ded9d1;
     color: #333;
     padding: 8px;
     text-decoration: solid;
@@ -40,23 +43,39 @@ section
     margin: 2px;
     text-align: center;
     font-size: 12px;
+    box-shadow: 0 0 #333;
+    transition: background-color 0.3s ease;
 }
 
+.boton:hover{
+    box-shadow: 5px 5px 4px #938c7a;
+    background-color: #737067;
+    transform:scale(1:1);
+    color: white;
+}
 #ventana
 {
     display: flex;
     flex-direction: column; /* Ordenar elementos verticalmente, uno abajo de otro. */
     align-items: center; /* Centrar elementos con respecto al eje vertical. */
     justify-content: space-around;
-    background-color: rgba(168, 167, 167, 0.4);
-    border-radius: 50px;
-    padding: 70px;
-    width: 60%;
-
+    background-color: rgba(181, 171, 151, 0.808);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 0px 32px #aa987f;
 }
 
 h4
 {
-    margin: 0px 0px 20px 0px;
+    margin: 5px 0px 20px 0px;
     font-size: 12px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  
+}
+svg{
+    width: 20px; /*ordenar iconos horizontalmente*/
+    height: 15px;
+    margin-top: 20px;
+    color: #352200;
 }
