@@ -35,7 +35,7 @@ section
 .boton
 {
     background-color: #ded9d1;
-    color: #333;
+    color: #2e2000;
     padding: 8px;
     text-decoration: solid;
     border-radius: 250px;
@@ -50,8 +50,6 @@ section
 .boton:hover{
     box-shadow: 5px 5px 4px #938c7a;
     background-color: #737067;
-    transform:scale(1:1);
-    color: white;
 }
 #ventana
 {
